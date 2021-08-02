@@ -4,20 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>lucky birthday checker!</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>Enter your birthdate : </p>
-    <input id="userinputdate" type = "date"> <br><br>
+    <header>Is your birthday lucky?</header>
+    <mark>Privacy notice : We are not storing/using your data. </mark>
+    <div class = "birth-date">Enter your birthdate : </div>
+    <input id="userinput-date" type = "date"> 
     
-    <p>Enter your lucky number : </p>
-    <input id="userinput-number" type = "number"> 
+    <div>Enter your lucky number : </div>
+    <input id="userinput-number" type = "number" min=1> 
     <br><br>
     <button id="btn-check">Check!</button><br><br>
-    <p>Output : </p>
-    <textarea id="output-area"></textarea>
-
+    <div id="output-area"></div>
+    <img id="happy-img" src="awesome.svg">
+    <img id="sad-img" src = "sad.svg">
    
     <script type="text/javascript" src="app.js"></script>
+    <footer></footer>
 </body>
 </html>
