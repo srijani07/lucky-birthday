@@ -17,10 +17,12 @@ function clickHandler(){
     var elementDate = birthDate.getDate();
     var sum = elementYear+elementMonth+elementDate+1;
 
-if(date.value === "" || number.value === "" || isNaN(number.value) === false || isNaN(date.value) === false) {
+if(date.value === "" || number.value === "" || isNaN(userNumber)=== true) {
         output.innerHTML= "Please enter a valid input.";
+        imgSad.style.display = "none"; //resetting the display state
+    imgHappy.style.display = "none";
     }
-else if(sum === userNumber) {
+else if(sum % userNumber === 0) {
     output.innerHTML = "Yayyy!! You have a lucky birthday!";
     imgSad.style.display = "none"; //resetting the display state (if user gets not lucky output first and then lucky, the state is updated)
     imgHappy.style.display = "inline";
